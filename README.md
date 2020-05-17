@@ -1,2 +1,2 @@
 # nology-challenge
-this is my challenge 2 and 3
+pre-course nology challenges 2/3
