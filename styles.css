@@ -8,21 +8,69 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+    
+    .second-container {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .second-container p {
+        color: lightskyblue;
+        font-size: 3rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        text-transform: uppercase;
+        overflow: hidden;
+        padding: 0.5rem;
+    }
+    
+    .second-container p span.typed-text {
+        font-weight: bold;
+        color: lightslategrey;
+    }
+    
+    .second-container p span.cursor {
+        display: inline-block;
+        width: 3px;
+        background-color: white;
+        margin-left: 0.1rem;
+        animation: blink 1s infinite;
+    }
+    
+    .second-container p span.cursor.typing {
+        animation: none;
+    }
+    
+    @keyframes blink {
+        0% {
+            background-color: #ccc;
+        }
+        49% {
+            background-color: #ccc;
+        }
+        50% {
+            background-color: transparent;
+        }
+        59% {
+            background-color: transparent;
+        }
+        100% {
+            background-color: #ccc;
+        }
+    }
     /* nav styles*/
     
     .nav-bar {
+        word-spacing: 350%;
         display: flex;
-        justify-content: space-between;
-        padding: 38px;
-    }
-    
-    .right-side {
-        display: flex;
-        right: 0;
+        justify-content: space-evenly;
+        padding: 20px;
     }
     
     .nav-bar>.left-side>div {
-        margin-right: 20px;
         font-size: 0.9em;
         text-transform: uppercase;
     }
@@ -100,16 +148,19 @@
     }
     
     .profile-image-wrapper img {
+        margin-top: 80px;
         width: 50%;
-        margin-left: 250px;
+        margin-left: 100px;
     }
     
     .profile-content-wrapper {
+        position: center;
+        margin-top: 70px;
         padding: 50px;
     }
     
     .profile-content-wrapper h1 {
-        color: orange;
+        color: lightseagreen;
     }
     /* video */
     
