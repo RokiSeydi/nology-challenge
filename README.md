@@ -1,2 +1,2 @@
 # nology-challenge
-pre-course nology challenges 2/3
+pre-course challenges aimed at acquiring an understanding of HTML, CSS and Javascript
